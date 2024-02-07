@@ -1,7 +1,8 @@
-import Cancel from "../../public/cancel.svg";
-import Menu from "../../public/menu.svg"
+import Cancel from "/cancel.svg";
+import Menu from "/menu.svg"
 
 const Header = () => {
+
   return (
     <>
       <header className="font-sans-serif bg-brand-blue p-8">
@@ -9,7 +10,7 @@ const Header = () => {
         <nav className="text-lg tracking-wide font-bold">
           <span hidden>Navigation</span>
           <button id="btnOpen" aria-expanded="false" aria-labelledby="nav-label">
-            {/* <Menu /> */}
+            <img src={Menu} alt="open menu" className="w-8" />
           </button>
 
           <div
@@ -17,7 +18,7 @@ const Header = () => {
             aria-labelledby="nav-label"
           >
             <button id="btnClose" aria-label="close">
-              {/* <Cancel /> */}
+              <img src={Cancel} alt="close menu" className="w-8" />
             </button>
             <ul className="text-brand-100">
               <li>
