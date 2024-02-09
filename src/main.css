@@ -548,6 +548,10 @@ video {
   display: block;
 }
 
+.flex {
+  display: flex;
+}
+
 .hidden {
   display: none;
 }
@@ -558,6 +562,30 @@ video {
 
 .w-8 {
   width: 2rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.break-words {
+  overflow-wrap: break-word;
 }
 
 .bg-brand-blue {
@@ -620,4 +648,48 @@ video {
 .text-brand-100 {
   --tw-text-opacity: 1;
   color: rgb(221 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:uppercase:hover {
+  text-transform: uppercase;
+}
+
+.hover\:text-brand-200:hover {
+  --tw-text-opacity: 1;
+  color: rgb(195 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-brand-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(170 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
+.hover\:decoration-wavy:hover {
+  text-decoration-style: wavy;
+}
+
+.hover\:hover\:decoration-wavy:hover:hover {
+  text-decoration-style: wavy;
+}
+
+.hover\:underline-offset-1:hover {
+  text-underline-offset: 1px;
+}
+
+.hover\:underline-offset-4:hover {
+  text-underline-offset: 4px;
+}
+
+.hover\:underline-offset-8:hover {
+  text-underline-offset: 8px;
+}
+
+@media (min-width: 768px) {
+  .md\:hidden {
+    display: none;
+  }
 }
