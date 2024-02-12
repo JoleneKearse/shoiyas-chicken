@@ -741,18 +741,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:absolute {
-    position: absolute;
-  }
-
-  .lg\:relative {
-    position: relative;
-  }
-
-  .lg\:z-10 {
-    z-index: 10;
-  }
-
   .lg\:hidden {
     display: none;
   }
@@ -761,17 +749,8 @@ video {
     flex-direction: row;
   }
 
-  .lg\:flex-col {
-    flex-direction: column;
-  }
-
   .lg\:gap-8 {
     gap: 2rem;
-  }
-
-  .lg\:bg-brand-blue {
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 115 186 / var(--tw-bg-opacity));
   }
 
   .lg\:text-brand-300 {
