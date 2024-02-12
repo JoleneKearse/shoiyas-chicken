@@ -10,6 +10,7 @@ export default {
       "brand-100": "#ddffff",
       "brand-200": "#c3ffff",
       "brand-300": "#aaffff",
+      "brand-800": "#001C63",
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
