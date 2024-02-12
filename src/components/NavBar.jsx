@@ -1,9 +1,8 @@
 /* eslint-disable react/prop-types */
+import NavLinks from "./NavLinks";
 import Cancel from "/cancel.svg";
 
 const NavBar = (props) => {
-
-
   return (
     <nav>
       <div
@@ -16,14 +15,16 @@ const NavBar = (props) => {
           aria-label="close"
           onClick={() => props.setIsNavOpen((prev) => !prev)}
         >
-          <img 
-            src={Cancel} 
-            alt="close menu" 
-            className="w-8 hover:backdrop-saturate-200 hover:w-9 absolute top-10 right-10" 
+          <img
+            src={Cancel}
+            alt="close menu"
+            className="w-8 hover:backdrop-saturate-200 hover:w-9 absolute top-10 right-10"
           />
         </button>
-        <ul className="text-brand-100 flex gap-6 flex-col items-center mt-16">
-          {props.navLinks.map((link, index) => (
+        {props.isNavOpen && <NavLinks isNavOpen={props.isNavOpen} setIsNavOpen={props.setIsNavOpen} navLinkPaths={props.navLinkPaths} />}
+        
+        {/* <ul className="text-brand-100 flex gap-6 flex-col items-center mt-16">
+          {props.navLinkPaths.map((link, index) => (
             <li key={index}>
               <a
                 href={link.path}
@@ -35,7 +36,7 @@ const NavBar = (props) => {
               </a>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
     </nav>
   )

@@ -1,19 +1,20 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import NavBar from "./NavBar";
 import Menu from "/menu.svg";
 
-const navLinks = [
+const navLinkPaths = [
   {
     name: "Home",
     path: "/",
   },
   {
-    name: "Gallery",
-    path: "/gallery",
-  },
-  {
     name: "Menu",
     path: "/menu",
+  },
+  {
+    name: "Gallery",
+    path: "/gallery",
   },
   {
     name: "Contact Us",
@@ -26,7 +27,7 @@ const Header = () => {
 
   return (
     <header className="font-sans-serif bg-brand-blue p-8">
-      {isNavOpen ? <NavBar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} navLinks={navLinks} /> : (
+      {isNavOpen ? <NavBar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} navLinkPaths={navLinkPaths} /> : (
         <div className="flex justify-between items-center">
           <h1 className="text-xl font-courgette">
             <span className="block text-4xl text-brand-300 font-black bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent pb-3">Shoiya's</span>
@@ -36,6 +37,7 @@ const Header = () => {
             id="btnOpen"
             aria-label="open"
             onClick={() => setIsNavOpen((prev) => !prev)}
+            className="lg:hidden"
           >
             <img
               src={Menu}
