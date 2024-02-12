@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NavBar from "./NavBar";
 import Menu from "/menu.svg";
+import NavLinks from "./NavLinks";
 
 const navLinkPaths = [
   {
@@ -24,6 +25,16 @@ const navLinkPaths = [
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1023);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth > 1023);
+    }
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <header className="font-sans-serif bg-brand-blue p-8">
@@ -33,18 +44,21 @@ const Header = () => {
             <span className="block text-4xl text-brand-300 font-black bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent pb-3">Shoiya's</span>
             Specialty Chicken, <span className="block md:inline-block">Wings N' Things</span>
           </h1>
-          <button
-            id="btnOpen"
-            aria-label="open"
-            onClick={() => setIsNavOpen((prev) => !prev)}
-            className="lg:hidden"
-          >
-            <img
-              src={Menu}
-              alt="open menu"
-              className="w-8 hover:backdrop-saturate-200 hover:w-9"
-            />
-          </button>
+          {isLargeScreen ? <NavLinks navLinkPaths={navLinkPaths} /> : (
+            <button
+              id="btnOpen"
+              aria-label="open"
+              onClick={() => setIsNavOpen((prev) => !prev)}
+              className="lg:hidden"
+            >
+              <img
+                src={Menu}
+                alt="open menu"
+                className="w-8 hover:backdrop-saturate-200 hover:w-9"
+              />
+            </button>
+          )}
+
         </div>
       )}
     </header>

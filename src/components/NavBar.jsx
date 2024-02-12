@@ -8,7 +8,7 @@ const NavBar = (props) => {
       <div
         role="dialog"
         aria-labelledby="nav-label"
-        className="bg-brand-aqua static w-screen h-screen -m-8"
+        className="bg-brand-aqua static w-screen h-screen -m-8 lg:bg-brand-blue lg:z-10"
       >
         <button
           id="btnClose"
@@ -22,21 +22,6 @@ const NavBar = (props) => {
           />
         </button>
         {props.isNavOpen && <NavLinks isNavOpen={props.isNavOpen} setIsNavOpen={props.setIsNavOpen} navLinkPaths={props.navLinkPaths} />}
-        
-        {/* <ul className="text-brand-100 flex gap-6 flex-col items-center mt-16">
-          {props.navLinkPaths.map((link, index) => (
-            <li key={index}>
-              <a
-                href={link.path}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="pb-6 text-brand-blue font-semibold text-lg hover:underline  hover:underline-offset-8 hover:decoration-wavy hover:text-brand-300"
-              >
-                {link.name}
-              </a>
-            </li>
-          ))}
-        </ul> */}
       </div>
     </nav>
   )
