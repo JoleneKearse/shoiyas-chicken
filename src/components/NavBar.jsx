@@ -8,7 +8,7 @@ const NavBar = (props) => {
       <div
         role="dialog"
         aria-labelledby="nav-label"
-        className="bg-brand-aqua static w-screen h-screen -m-8 lg:bg-brand-blue lg:z-10"
+        className="bg-brand-aqua static w-screen h-screen -m-8"
       >
         <button
           id="btnClose"
