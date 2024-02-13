@@ -21,7 +21,7 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.google.com/maps/place/537+Christina+St+N,+Sarnia,+ON+N7T+5W5/@42.9840469,-82.403669,17z/data=!3m1!4b1!4m6!3m5!1s0x88259cb9bea27027:0x6296d75c5652ac15!8m2!3d42.984043!4d-82.4010941!16s%2Fg%2F11c2gnvs3s?entry=ttu" target="_blank" rel="noopener noreferrer">
               <div className="flex gap-2">
                 <img
                   src={Map}
@@ -36,10 +36,10 @@ const Footer = () => {
             <a href="/menu" target="_blank" rel="noopener noreferrer">
               <div className="flex gap-2">
                 <img
-                    src={Food}
-                    alt="menu"
-                    className="w-5 hover:backdrop-saturate-100 hover:w-6"
-                  />
+                  src={Food}
+                  alt="menu"
+                  className="w-5 hover:backdrop-saturate-100 hover:w-6"
+                />
                 <p>View our menu</p>
               </div>
             </a>
