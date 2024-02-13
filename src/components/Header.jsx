@@ -37,7 +37,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="font-sans-serif bg-brand-blue p-8">
+    <header className="font-sans-serif bg-brand-blue p-8 sticky top-0">
       {isNavOpen ? <NavBar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} navLinkPaths={navLinkPaths} /> : (
         <div className="flex justify-between items-center">
           <h1 className="text-xl font-courgette">

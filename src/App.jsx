@@ -5,8 +5,11 @@ import Footer from "./components/Footer"
 function App() {
 
   return (
-    <main className="static">
+    <main className="static h-full absolute w-full bg-brand-blue">
       <Header />
+      <Intro />
+      <Intro />
+      <Intro />
       <Intro />
       <Footer />
     </main>

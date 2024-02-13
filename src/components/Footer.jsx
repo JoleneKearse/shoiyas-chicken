@@ -4,10 +4,10 @@ import Food from "/chicken.svg"
 
 const Footer = () => {
   return (
-    <footer className="bg-brand-blue sticky bottom-0 p-6">
-      <div className="flex justify-between items-center">
+    <footer className="bg-brand-blue p-6 bottom-0">
+      <div className="flex flex-col flex-wrap justify-between items-center">
         <span className="block text-2xl text-brand-300 font-courgette font-black bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent pb-3">Shoiya's</span>
-        <ul className="flex gap-5 font-roboto">
+        <ul className="flex gap-3 font-roboto flex-col lg:flex-row lg:gap-5">
           <li className="hover:text-brand-300">
             <a href="https://www.facebook.com/profile.php?id=100093559993326" target="_blank" rel="noopener noreferrer">
               <div className="flex gap-2">
