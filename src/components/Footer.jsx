@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-brand-blue sticky bottom-0 p-6">
       <div className="flex justify-between items-center">
         <span className="block text-4xl text-brand-300 font-courgette font-black bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent pb-3">Shoiya's</span>
-        <ul className="flex flex-col gap-3">
+        <ul className="flex flex-col gap-3 font-roboto">
           <li>
             <a href="https://www.facebook.com/profile.php?id=100093559993326" target="_blank" rel="noopener noreferrer">
               <div className="flex gap-2">

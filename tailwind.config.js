@@ -16,6 +16,7 @@ export default {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
       courgette: ['"Courgette"', ...defaultTheme.fontFamily.sans],
+      roboto: ["Roboto", ...defaultTheme.fontFamily.sans],
     },
     extend: {
       backgroundImage: {

@@ -2,7 +2,7 @@
 
 const NavLinks = (props) => {
   return (
-    <ul className="text-brand-100 flex gap-6 flex-col items-center mt-16 lg:flex-row lg:gap-8">
+    <ul className="text-brand-100 font-roboto flex gap-6 flex-col items-center lg:flex-row lg:gap-8">
       {props.navLinkPaths.map((link, index) => (
         <li key={index}>
           <a
