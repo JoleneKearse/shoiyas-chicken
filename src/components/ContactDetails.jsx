@@ -34,7 +34,7 @@ const ContactDetails = () => {
             alt="directions"
             className="w-5 hover:backdrop-saturate-100"
           />
-          <p className="text-base font-roboto text-brand-100 leading-5 hover:font-semibold">537 Christina St N<br /> Sarnia, ON N7T 5W5</p>
+          <p className="text-base font-roboto text-brand-100 leading-6 pt-4 hover:font-semibold">537 Christina St N<br /> Sarnia, ON N7T 5W5</p>
         </div>
       </address>
     </section>
