@@ -7,7 +7,7 @@ const Intro = () => {
 
       <p className="text-lg text-brand-100 font-roboto leading-10 max-w-prose mx-auto lg:text-xl">We are completely <span className="text-brand-300 font-semibold">Gluten-Free</span> and <span className="text-brand-300 font-semibold">Halal</span>. Our meal options are <span className="text-brand-300 font-semibold">oven baked</span> and never deep fried.</p>
 
-      <img src={Image} alt="restaurant" className="py-7 lg:max-w-prose lg:mx-auto" />
+      <img src={Image} alt="restaurant" className="py-7 w-full md:max-w-96 mx-auto" />
     </section>
   )
 }
