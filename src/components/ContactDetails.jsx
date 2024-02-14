@@ -5,29 +5,29 @@ import MapBrand from "/map2.svg"
 
 const ContactDetails = () => {
   return (
-    <section>
-      <h2 className="text-3xl font-courgette font-bold text-brand-300 pb-8">Contact Us</h2>
-      <img src={Image} alt="restaurant" className="py-7 max-w-80 lg:mx-auto" />
+    <section className="mx-auto">
+      <h2 className="text-3xl font-courgette font-bold text-brand-300 text-center pb-8">Contact Us</h2>
+      <img src={Image} alt="restaurant" className="py-7 max-w-5/6 mx-auto lg:max-w-4/5" />
 
-      <div className="flex gap-2">
-        <img 
-          src={Phone} 
-          alt="phone" 
+      <div className="flex gap-2 justify-center">
+        <img
+          src={Phone}
+          alt="phone"
           className="w-5 hover:backdrop-saturate-100"
         />
         <p className="text-base font-roboto text-brand-100 leading-10 hover:font-semibold">(519) 918 - 6333</p>
       </div>
-      <div className="flex gap-2">
-        <img 
-          src={Email} 
-          alt="email" 
+      <div className="flex gap-2 justify-center">
+        <img
+          src={Email}
+          alt="email"
           className="w-5 hover:backdrop-saturate-100"
         />
-        <p className="text-base font-roboto text-brand-100 leading-10 hover:font-semibold">
+        <a href="mailto:shoiyasspecialty@gmail.com" className="text-base font-roboto text-brand-100 leading-10 hover:font-semibold">
           shoiyasspecialty@gmail.com
-        </p>
+        </a>
       </div>
-      <div className="flex gap-2">
+      <div className="flex gap-2 justify-center">
         <img
           src={MapBrand}
           alt="directions"
