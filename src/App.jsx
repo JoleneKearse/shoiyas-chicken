@@ -1,18 +1,16 @@
-import Header from "./components/Header"
-import Intro from "./components/Intro"
-import Footer from "./components/Footer"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import HomePage from "./pages/HomePage"
+import ContactPage from "./pages/ContactPage"
 
 function App() {
 
   return (
-    <main className="static h-full absolute w-full bg-brand-blue">
-      <Header />
-      <Intro />
-      <Intro />
-      <Intro />
-      <Intro />
-      <Footer />
-    </main>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+    </Router>
   )
 }
 
