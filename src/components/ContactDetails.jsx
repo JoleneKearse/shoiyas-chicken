@@ -16,7 +16,7 @@ const ContactDetails = () => {
             alt="phone"
             className="w-5 hover:backdrop-saturate-100"
           />
-          <a href="tel:+5199186333" className="text-base font-roboto text-brand-100 leading-10 hover:font-semibold">(519) 331 - 5548</a>
+          <a href="tel:+5193315548" className="text-base font-roboto text-brand-100 leading-10 hover:font-semibold">(519) 331 - 5548</a>
         </div>
         <div className="flex gap-2 justify-center">
           <img
