@@ -1,18 +1,17 @@
 import Header from "../components/Header"
-import ContactDetails from "../components/ContactDetails"
+import GalleryBig from "../components/GalleryBig"
 import Footer from "../components/Footer"
 
-
-const Contact = () => {
+const GallaryPage = () => {
   return (
     <div className="static h-full absolute w-full bg-brand-blue overscroll-none">
       <Header />
-      <main className="py-20 px-6 bg-brand-800 lg:px-96">
-        <ContactDetails />
+      <main className="py-20 px-6 outline-dotted  bg-brand-800 lg:px-96">
+        <GalleryBig />
       </main>
       <Footer />
     </div>
   )
 }
 
-export default Contact
+export default GallaryPage
