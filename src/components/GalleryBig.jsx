@@ -47,16 +47,16 @@ const foodImages = [
 
 const GallaryBig = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {foodImages.map((image) => (
-          <img 
-            src={image.source} 
-            key={image.key} 
-            alt={image.alt} 
-            title={image.tooltip} 
-            className="h-auto max-w-full rounded-lg"
-          />
-        ))}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center">
+      {foodImages.map((image) => (
+        <img
+          src={image.source}
+          key={image.key}
+          alt={image.alt}
+          title={image.tooltip}
+          className="h-auto max-w-full rounded-lg"
+        />
+      ))}
     </div>
   )
 }
