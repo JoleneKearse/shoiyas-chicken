@@ -48,7 +48,6 @@ const foodImages = [
 const GallaryBig = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-      {/* <div className="grid gap-10"> */}
         {foodImages.map((image) => (
           <img 
             src={image.source} 
@@ -58,7 +57,6 @@ const GallaryBig = () => {
             className="h-auto max-w-full rounded-lg"
           />
         ))}
-      {/* </div> */}
     </div>
   )
 }
