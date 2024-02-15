@@ -1,4 +1,4 @@
-import Image from "/restaurant.png"
+import Image from "/shoiya-wing.jpg"
 import Phone from "/phone.svg"
 import Email from "/email.svg"
 import MapBrand from "/map2.svg"
@@ -10,8 +10,13 @@ const ContactDetails = () => {
     <section className="mx-auto">
       <h2 className="text-3xl font-courgette font-bold text-brand-300 text-center pb-8">Contact Us</h2>
       <img src={Image} alt="restaurant" className="py-7 w-full md:max-w-96 mx-auto" />
-
-      <address>
+      <p className="text-base font-roboto text-brand-100 leading-10 max-w-prose mx-auto">
+        We welcome catering orders and <i>'Yes, we do have curb-side pickup!</i>
+      </p>
+      <p className="text-base font-roboto text-brand-100 leading-10 max-w-prose mx-auto">
+        All our contact information is here for you.  And you can click on the icons to directly call or email us.
+      </p>
+      <address className="pt-10">
         <div className="flex justify-center items-center gap-4">
           <a href={`tel:${phone}`} className="text-base font-roboto text-brand-100 leading-10 hover:font-semibold">
             <img
