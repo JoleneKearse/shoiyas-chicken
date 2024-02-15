@@ -13,6 +13,7 @@ const NavBar = (props) => {
         <button
           id="btnClose"
           aria-label="close"
+          title="Close menu"
           onClick={() => props.setIsNavOpen((prev) => !prev)}
         >
           <img

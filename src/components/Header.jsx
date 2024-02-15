@@ -48,6 +48,7 @@ const Header = () => {
             <button
               id="btnOpen"
               aria-label="open"
+              title="Open navigation menu"
               onClick={() => setIsNavOpen((prev) => !prev)}
               className="lg:hidden"
             >

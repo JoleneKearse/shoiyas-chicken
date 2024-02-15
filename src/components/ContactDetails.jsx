@@ -11,7 +11,7 @@ const ContactDetails = () => {
       <h2 className="text-3xl font-courgette font-bold text-brand-300 text-center pb-8">Contact Us</h2>
       <img src={Image} alt="restaurant" className="py-7 w-full md:max-w-96 mx-auto" />
       <p className="text-base font-roboto text-brand-100 leading-10 max-w-prose mx-auto">
-        We welcome catering orders and <i>'Yes, we do have curb-side pickup!</i>
+        We welcome catering orders and <i>'Yes, we do have curb-side pickup!'</i>
       </p>
       <p className="text-base font-roboto text-brand-100 leading-10 max-w-prose mx-auto">
         All our contact information is here for you.  And you can click on the icons to directly call or email us.
