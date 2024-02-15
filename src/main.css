@@ -689,6 +689,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .overscroll-none {
   overscroll-behavior: none;
 }
@@ -858,6 +862,10 @@ video {
   width: 2.25rem;
 }
 
+.hover\:w-6:hover {
+  width: 1.5rem;
+}
+
 .hover\:font-semibold:hover {
   font-weight: 600;
 }
@@ -889,6 +897,19 @@ video {
   --tw-backdrop-saturate: saturate(2);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.focus\:w-6:focus {
+  width: 1.5rem;
+}
+
+.focus\:w-7:focus {
+  width: 1.75rem;
+}
+
+.focus\:ring-brand-aqua:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(120 186 174 / var(--tw-ring-opacity));
 }
 
 @media (min-width: 768px) {
