@@ -11,12 +11,16 @@ export default {
       "brand-200": "#c3ffff",
       "brand-300": "#aaffff",
       "brand-800": "#001C63",
+      pink: "#B33D82",
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
       courgette: ['"Courgette"', ...defaultTheme.fontFamily.sans],
       roboto: ["Roboto", ...defaultTheme.fontFamily.sans],
+    },
+    borderRadius: {
+      opening: "57% 43% 46% 54% / 42% 32% 68% 58%",
     },
     extend: {
       backgroundImage: {
