@@ -3,6 +3,9 @@ import Image from "/restaurant.png"
 const Intro = () => {
   return (
     <section>
+      <article className="w-full mx-auto py-20 bg-pink rounded-opening md:w-3/5 lg:w-2/5">
+
+      </article>
       <p className="text-lg text-brand-100 leading-10 max-w-prose mx-auto pb-3 font-roboto lg:text-xl">
         Looking for <span className="text-brand-300 font-semibold">delicious</span> and <span className="text-brand-300 font-semibold">healthy</span> eating in Sarnia?
       </p>

@@ -31,7 +31,7 @@ const hours = [
 
 const OpenHours = () => {
   return (
-    <article className='w-full mx-auto py-20 bg-pink rounded-opening md:w-3/5 lg:w-2/5'>
+    <article className="w-full mx-auto py-20 bg-pink rounded-opening md:w-3/5 lg:w-2/5">
       <h2 className="flex justify-center flex-wrap text-4xl font-courgette text-brand-800 font-black">Opening Hours</h2>
       <dl>
         {hours.map((hour, index) => (
