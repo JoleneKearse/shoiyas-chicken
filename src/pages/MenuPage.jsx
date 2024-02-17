@@ -1,17 +1,17 @@
 import Header from "../components/Header"
-import GalleryBig from "../components/GalleryBig"
 import Footer from "../components/Footer"
+import ComingSoon from "/coming-soon.svg"
 
-const GallaryPage = () => {
+const MenuPage = () => {
   return (
     <section className="static h-full absolute w-full bg-brand-blue overscroll-none">
       <Header />
-      <main className="py-20 px-6 outline-dotted  bg-brand-800 lg:px-96">
-        <GalleryBig />
+      <main className="py-20 px-6 bg-brand-800 lg:px-96">
+        <img src={ComingSoon} alt="coming soon" className="mx-auto" />
       </main>
       <Footer />
     </section>
   )
 }
 
-export default GallaryPage
+export default MenuPage
