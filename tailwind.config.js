@@ -21,6 +21,8 @@ export default {
     },
     borderRadius: {
       opening: "57% 43% 46% 54% / 42% 32% 68% 58%",
+      blurb1: "45% 55% 59% 41% / 30% 30% 70% 70%",
+      img1: "46% 54% 45% 55% / 57% 39% 61% 43%",
     },
     extend: {
       backgroundImage: {

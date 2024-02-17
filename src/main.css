@@ -705,8 +705,16 @@ video {
   overscroll-behavior: none;
 }
 
+.rounded-blurb1 {
+  border-radius: 45% 55% 59% 41% / 30% 30% 70% 70%;
+}
+
 .rounded-opening {
   border-radius: 57% 43% 46% 54% / 42% 32% 68% 58%;
+}
+
+.rounded-img1 {
+  border-radius: 46% 54% 45% 55% / 57% 39% 61% 43%;
 }
 
 .bg-brand-800 {
@@ -746,9 +754,19 @@ video {
   padding: 2rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-2 {
@@ -764,6 +782,21 @@ video {
 .py-7 {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pb-3 {
@@ -879,6 +912,11 @@ video {
 .text-brand-800 {
   --tw-text-opacity: 1;
   color: rgb(0 28 99 / var(--tw-text-opacity));
+}
+
+.text-pink {
+  --tw-text-opacity: 1;
+  color: rgb(179 61 130 / var(--tw-text-opacity));
 }
 
 .outline-dotted {
